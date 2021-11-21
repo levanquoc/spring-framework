@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+  <definition name="blog.template" template="/WEB-INF/jsp/templates/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/jsp/components/templates/header.jsp" />
+    <put-attribute name="leftbar" value="/WEB-INF/jsp/components/templates/leftbar.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="footer" value="/WEB-INF/jsp/components/templates/footer.jsp" />
+  </definition>
+  
+  <definition name="blog.index" extends="blog.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/views/blog/index.jsp" />
+  </definition>
+  <definition name="blog.post" extends="blog.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/views/blog/post.jsp" />
+  </definition>
+   <definition name="blog.contact" extends="blog.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/views/blog/contact.jsp" />
+  </definition>
+   <definition name="blog.about" extends="blog.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/views/blog/about.jsp" />
+  </definition>
+ 
+
+ 
+</tiles-definitions>
